@@ -1,0 +1,27 @@
+# Configuración de Reloj (25 MHz típicamente en Colorlight)
+LOCATE COMP "clk" SITE "P6";        # Pin de reloj externo
+IOBUF PORT "clk" IO_TYPE=LVCMOS33;
+
+# Señal de Reset (puedes usar un botón o lógica interna)
+LOCATE COMP "resetn" SITE "M1";     
+IOBUF PORT "resetn" IO_TYPE=LVCMOS33;
+
+# Salida a la Matriz LED WS2812 (Conector J1)
+LOCATE COMP "ws2812_data_pin" SITE "F15"; 
+IOBUF PORT "ws2812_data_pin" IO_TYPE=LVCMOS33;
+
+# Entrada del Sensor de Pulso (Conector J2)
+LOCATE COMP "pulse_sensor_pin" SITE "B15";
+IOBUF PORT "pulse_sensor_pin" IO_TYPE=LVCMOS33;
+
+# UART para depuración (Pines del conector J7/J8)
+LOCATE COMP "TXD" SITE "P11";
+LOCATE COMP "RXD" SITE "P12";
+IOBUF PORT "TXD" IO_TYPE=LVCMOS33;
+IOBUF PORT "RXD" IO_TYPE=LVCMOS33;
+
+# LEDs de diagnóstico de la placa
+LOCATE COMP "LEDS" SITE "T6";
+LOCATE COMP "LEDS[5]" SITE "R6";
+IOBUF PORT "LEDS" IO_TYPE=LVCMOS33;
+IOBUF PORT "LEDS[5]" IO_TYPE=LVCMOS33;
