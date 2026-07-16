@@ -20,4 +20,14 @@ Este proyecto implementa un Sistema sobre Silicio (SoC) en una FPGA **Colorlight
 ## Operación y Resultados
 A continuación se muestra el funcionamiento del sistema en tiempo real, detectando el pulso y cambiando los colores de la matriz WS2812:
 
-![Demostración del pulso cardiaco](img/matriz_funcionando.gif)
+### Demostración 1
+
+![Demostración del pulso cardiaco 1](img/monitorcardiaco1.gif)
+
+### Demostración 2
+
+![Demostración del pulso cardiaco 2](img/monitorcardiaco2.gif)
+
+### Demostración 3
+
+![Demostración del pulso cardiaco 3](img/monitorcardiaco3.gif)
